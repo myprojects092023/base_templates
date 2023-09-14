@@ -1,0 +1,10 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    prefer_relative_imports: true
+    prefer_single_quotes: true
+    require_trailing_commas: true
+    avoid_slow_async_io: true
+    avoid_web_libraries_in_flutter: true
+    use_build_context_synchronously: false
