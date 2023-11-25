@@ -8,12 +8,14 @@ class Wrapper extends StatelessWidget {
   final Widget child;
   final EdgeInsets? padding;
   final bool scrollable;
+  final Color? scaffoldBackgroundColor;
 
   const Wrapper({
     super.key,
     required this.child,
     this.padding,
     this.scrollable = false,
+    this.scaffoldBackgroundColor,
   });
 
   @override
@@ -21,6 +23,7 @@ class Wrapper extends StatelessWidget {
     var padding = this.padding ?? BaseTemplates.defaultWrapperPadding;
 
     return Scaffold(
+      backgroundColor: scaffoldBackgroundColor,
       body: SafeArea(
         child: scrollable
             ? SingleChildScrollView(
